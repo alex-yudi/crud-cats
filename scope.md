@@ -29,12 +29,16 @@ Dados de cada tipo de acesso:
         - E-mail
         - Telefone
         - Gatos
+        - Data de cadastro
+        - Data de desativação
     - Cuidador
         - Login
         - Senha
         - Nome
         - E-mail
         - Telefone
+        - Data de cadastro
+        - Data de desativação
     - Gato
         - Nome
         - Raça
@@ -42,3 +46,11 @@ Dados de cada tipo de acesso:
         - Cuidador
         - Foto
         - Obs importantes
+        - Data de cadastro
+        - Data de desativação
+
+Interações importantes:
+    - Se o dono do gato for desativado, o cadastro do gato também deve ser desativado
+    - Se o Cuidador for desativado, então o gato deve ter a exclusão do cuidador do seu cadastro
+    - Se houver um gato sem cuidador cadastrado, o Dono do gato não pode realizar nenhuma ação no sistema
+    - E-mail e telefone devem ser únicos
